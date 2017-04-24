@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.kpfu.itis.javalab.contacts</groupId>
+    <artifactId>contacts</artifactId>
+    <version>0.1-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <name>Contacts</name>
+
+    <modules>
+        <module>contacts-rest</module>
+        <module>contacts-dao</module>
+        <module>contacts-service</module>
+        <module>contacts-model</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--Modules-->
+            <dependency>
+                <groupId>ru.kpfu.itis.javalab.contacts</groupId>
+                <artifactId>contacts-dao</artifactId>
+                <version>0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ru.kpfu.itis.javalab.contacts</groupId>
+                <artifactId>contacts-model</artifactId>
+                <version>0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ru.kpfu.itis.javalab.contacts</groupId>
+                <artifactId>contacts-rest</artifactId>
+                <version>0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ru.kpfu.itis.javalab.contacts</groupId>
+                <artifactId>contacts-service</artifactId>
+                <version>0.1-SNAPSHOT</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
