@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.kpfu.itis.javalab.contacts</groupId>
     <artifactId>contacts</artifactId>
-    <version>0.1</version>
+    <version>0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -19,8 +20,7 @@
 
     <scm>
         <connection>scm:git:https://github.com/SZabirov/contacts_em.git</connection>
-      <tag>v0.1</tag>
-  </scm>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,25 +35,25 @@
             <dependency>
                 <groupId>ru.kpfu.itis.javalab.contacts</groupId>
                 <artifactId>contacts-dao</artifactId>
-                <version>0.1</version>
+                <version>0.1-SNAPSHOT</version>
             </dependency>
 
             <dependency>
                 <groupId>ru.kpfu.itis.javalab.contacts</groupId>
                 <artifactId>contacts-model</artifactId>
-                <version>0.1</version>
+                <version>0.1-SNAPSHOT</version>
             </dependency>
 
             <dependency>
                 <groupId>ru.kpfu.itis.javalab.contacts</groupId>
                 <artifactId>contacts-rest</artifactId>
-                <version>0.1</version>
+                <version>0.1-SNAPSHOT</version>
             </dependency>
 
             <dependency>
                 <groupId>ru.kpfu.itis.javalab.contacts</groupId>
                 <artifactId>contacts-service</artifactId>
-                <version>0.1</version>
+                <version>0.1-SNAPSHOT</version>
             </dependency>
 
         </dependencies>
